@@ -1,0 +1,65 @@
+@import 'compass/css3/inline-block';
+
+#container-app{
+    border-top: 1px solid #fff;
+    min-height: 100%;
+
+    .single-line{
+        p{
+            text-align: right;
+        }
+
+        select{
+            width: 100%;
+        }
+
+        label{
+            padding-right: 10px; 
+        }
+    }
+
+    .submit{
+        @include inline-block(middle);
+        color: #fff;
+        border-radius: 4px;
+        text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+        background: rgb(28, 184, 65);
+        border: 0;
+        padding: 20px 30px;
+    }
+
+    .result{
+        @include inline-block(middle);
+        padding-left: 20px;
+        color: #666;
+        box-sizing: border-box;
+
+        p{
+            font-weight: 600;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px){
+    #container-app{
+        padding: 20px;
+        box-sizing: border-box;
+
+        .single-line p{
+            text-align: left;
+        }
+
+        .result,
+        .submit{
+            width: 100%;
+        }
+
+        .result{
+            padding: 20px;
+            
+            p{
+                text-align: center;
+            }
+        }
+    }   
+}

@@ -1,0 +1,15 @@
+// Code Snippets
+@import '_helpers/slider';
+@import '_helpers/grid';
+
+// App Sections
+@import '_sections/header';
+@import '_sections/container-app';
+@import '_sections/footer';
+
+html,
+body{
+    height: 100%;
+}
+
+body{ background: #eee; font-family: 'Nunito', sans-serif; }

@@ -1,0 +1,65 @@
+<header id="header">
+    <h1>How many camels do you worth? <small>Discover it, now!</small></h1>
+</header>
+
+<article id="container-app">
+        <div class="row single-line">
+            <div class="katrina-column katrina-column-4">
+                <p>Age</p>
+            </div>
+            <div class="katrina-column katrina-column-6">
+                <div range-slider min="1" max="150" model-max="age.max" pin-handle="min"></div>
+            </div>
+        </div>
+        <div class="row single-line">
+            <div class="katrina-column katrina-column-4">
+                <p>Height (cm)</p>
+            </div>
+            <div class="katrina-column katrina-column-6">
+                <div range-slider min="0" max="300" model-max="height.max" pin-handle="min"></div>
+            </div>
+        </div>
+        <div class="row single-line">
+            <div class="katrina-column katrina-column-4">
+                <p>Haircolor</p>
+            </div>
+            <div class="katrina-column katrina-column-6">
+                <select ng-model="haircolor">
+                    <option ng-value="10">Green</option>
+                    <option ng-value="20">Purple</option>
+                    <option ng-value="30">Blue</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row single-line">
+            <div class="katrina-column katrina-column-4">
+                <p>Eyecolor</p>
+            </div>
+            <div class="katrina-column katrina-column-2">
+                <label for="eye-color-red">Red</label>
+                <input type="radio" ng-model="eyecolor" value="5" name="eyes" class="" id="eye-color-red">
+            </div>
+            <div class="katrina-column katrina-column-2">
+                <label for="eye-color-yellow">Yellow</label>
+                <input type="radio" ng-model="eyecolor" value="30" name="eyes" class="" id="eye-color-yellow">
+            </div>
+            <div class="katrina-column katrina-column-2">
+                <label for="eye-color-orange">Orange</label>
+                <input type="radio" ng-model="eyecolor" value="2" name="eyes" class="" id="eye-color-orange">
+            </div>
+        </div>
+
+        <div class="row single-line">
+            <div class="katrina-column katrina-column-4"></div>
+            <div class="katrina-column katrina-column-6">
+                <button class="submit" ng-click="camelCounter()" type="submit">Calculate</button>
+                <div id="result" class="result"><p>{{ camels }}</p></div>
+            </div>
+        </div>
+        <div id="push"></div>
+</article>
+
+<footer id="footer">
+    <p>Made with love by @nandorossetto</p>
+</footer>
